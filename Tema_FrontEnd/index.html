@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tema_Recapitulare</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="app.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Postarile mele </h1>
+        </header>
+
+        <main>
+            <section class="form-section">
+                <h2>Adauga o postare noua</h2>
+                <form id="post-form">
+                    <div class="imput-group">
+                        <label for="title">Titlu:</label>
+                        <input type="text" id="title" name="title" required minlength="5" maxlength="100">
+                    </div>
+
+                    <div class="imput-group">
+                        <label for="body">Continut:</label>
+                        <textarea id="body" name="body" required></textarea>
+                    </div>
+                    <button type="submit">Adauga Postare</button>
+                    <p id="form-error" class="error-message"></p>
+                </form>
+            </section>
+            <section class="list-section">
+               <div id="status-message">Se incarca datele...</div>
+               <ul id="posts-list"></ul>
+            </section>
+        </main>
+        <footer>
+            <p>Tema realizata pentru curs</p>    
+        </footer>
+
+    </body>
+</html>
